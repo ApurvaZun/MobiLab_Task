@@ -15,3 +15,6 @@
 ```bash
 1. Proxy available with html-proxy-middleware
 ```
+### Things that can be improved:
+
+1. Pagination to handle the data
