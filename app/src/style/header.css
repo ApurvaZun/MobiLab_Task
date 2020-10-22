@@ -6,6 +6,11 @@
   display: none;
 }
 
+select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .header {
   height: 10vh;
   display: flex;

@@ -34,7 +34,6 @@ class DisplayImages extends React.Component {
 
   render() {
     const { imagesData } = this.props;
-    console.log("hi");
     return (
       <div className="display-image">
         {imagesData

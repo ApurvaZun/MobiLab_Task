@@ -23,9 +23,6 @@
   cursor: pointer;
 }
 
-.image-card:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
 .img-desc {
   width: 240px; /* Set a small width */
   padding: 20px;
@@ -33,10 +30,11 @@
 
 .image-detail {
   display: inline-grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 2fr 1fr;
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   margin: 24px;
+  color: #fff;
 }
 
 .img-box img {
@@ -45,4 +43,19 @@
 
 .img-details {
   float: right;
+  transform: translateY(25%);
+}
+
+@media only screen and (max-width: 600px) {
+  .img-desc,
+  .image-card,
+  .image-card img {
+    width: 100px;
+    padding: 0;
+  }
+  .display-image {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+  }
 }

@@ -26,7 +26,6 @@ export const setSortFilter = sort => {
 };
 
 export const setSectionFilter = section => {
-  console.log(section);
   return {
     type: SET_SECTION_FILTER,
     payload: section
@@ -34,7 +33,6 @@ export const setSectionFilter = section => {
 };
 
 export const initialLoadImages = imageData => {
-  console.log("initial lod");
   return {
     type: INITIAL_LOAD_IMAGES,
     payload: imageData
@@ -58,7 +56,7 @@ export const makeAPIcall = () => {
     } = getState();
 
     fetch(
-      `https://api.imgur.com/3/gallery/${sectionFilterValue}/${sortFilterValue}/${windowFilter}?showViral=${viralFilter}&page=[0-99]`,
+      `/3/gallery/${sectionFilterValue}/${sortFilterValue}/${windowFilter}?showViral=${viralFilter}&page=1`,
       {
         headers: {
           Authorization: "Client-ID 51cfc0a8c292269"
