@@ -3,15 +3,11 @@
 ### Instructions
 
 ```bash
-1. git clone git@github.com:ApurvaZun/UserGroupSearch.git
+1. git clone git@github.com:ApurvaZun/MobiLab_Task.git
 
-2. After clone you should have McMakler_task folder
+2. npm install (this will install all dependency)
 
-3. cd app
-
-4. npm install (this will install all dependency)
-
-5. npm start
+3. npm start
 
 ```
 
